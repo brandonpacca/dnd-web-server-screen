@@ -1,0 +1,23 @@
+{
+  "name": "dnd-web-server-screen",
+  "version": "1.0.0",
+  "description": "Companion server-side in tempo reale per dnd-web-gamemaster-screen e dnd-web-player-screen: gestione condivisa del combattimento via WebSocket",
+  "type": "module",
+  "main": "src/server.js",
+  "bin": { "dnd-web-server-screen": "src/index.js" },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": { "node": ">=18.17" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonpacca/dnd-web-server-screen.git"
+  },
+  "keywords": ["dnd", "5e", "combat", "initiative", "websocket"],
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.23.0"
+  }
+}
